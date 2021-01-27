@@ -1,0 +1,10 @@
+ 1 
+ 2   freq = {}                # Create an empty dictionary
+ 3   for c in text:           # Iterate over the characters in the text
+ 4       if c.isalpha():      # We count only letters
+ 5           c = c.lower()    # We consider 'a' and 'A' to be the same letter
+ 6           if c in freq:    # If c already is in the dictionary
+ 7               freq[c] += 1 # Add 1 to the value stored in freq[c]
+ 8           else:            # or, if c is not in freq
+ 9               freq[c] = 1  # Add c to freq and set its value to 1
+10   print(freq)
